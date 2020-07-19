@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "peliculas",
+  "info": {
+    "name": "Peliculas"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Nombre": {
+      "type": "string"
+    },
+    "Director": {
+      "type": "string"
+    }
+  }
+}

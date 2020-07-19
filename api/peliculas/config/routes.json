@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/peliculas",
+      "handler": "peliculas.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/peliculas/count",
+      "handler": "peliculas.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/peliculas/:id",
+      "handler": "peliculas.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/peliculas",
+      "handler": "peliculas.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/peliculas/:id",
+      "handler": "peliculas.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/peliculas/:id",
+      "handler": "peliculas.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
