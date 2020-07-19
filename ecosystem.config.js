@@ -1,9 +1,12 @@
 module.exports = {
-    apps: [
-      {
-        name: 'wiki-api',
-        script: 'npm',
-        args: 'start',
+    apps : [{
+      name: "strapi",
+      script: "./server.js",
+      env: {
+        NODE_ENV: "development",
       },
-    ],
-  };
+      env_production: {
+        NODE_ENV: "production",
+      }
+    }]
+  }
