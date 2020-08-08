@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/peliculas",
-      "handler": "peliculas.find",
+      "path": "/historias",
+      "handler": "historias.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/peliculas/count",
-      "handler": "peliculas.count",
+      "path": "/historias/count",
+      "handler": "historias.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/peliculas/:id",
-      "handler": "peliculas.findOne",
+      "path": "/historias/:id",
+      "handler": "historias.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/peliculas",
-      "handler": "peliculas.create",
+      "path": "/historias",
+      "handler": "historias.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/peliculas/:id",
-      "handler": "peliculas.update",
+      "path": "/historias/:id",
+      "handler": "historias.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/peliculas/:id",
-      "handler": "peliculas.delete",
+      "path": "/historias/:id",
+      "handler": "historias.delete",
       "config": {
         "policies": []
       }

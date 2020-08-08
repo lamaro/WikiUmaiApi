@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "historias",
+  "info": {
+    "name": "Historias"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Titulo": {
+      "type": "string"
+    },
+    "Sinopsis": {
+      "type": "richtext"
+    },
+    "planeta": {
+      "via": "historias",
+      "model": "planetas"
+    }
+  }
+}

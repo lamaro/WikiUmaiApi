@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "planetas",
+  "info": {
+    "name": "Planetas"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Nombre": {
+      "type": "string"
+    },
+    "Descripcion": {
+      "type": "text"
+    },
+    "Avatar": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "historias": {
+      "collection": "historias",
+      "via": "planeta"
+    }
+  }
+}
