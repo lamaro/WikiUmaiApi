@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/personajes",
+      "handler": "personajes.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/personajes/count",
+      "handler": "personajes.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/personajes/:id",
+      "handler": "personajes.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/personajes",
+      "handler": "personajes.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/personajes/:id",
+      "handler": "personajes.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/personajes/:id",
+      "handler": "personajes.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

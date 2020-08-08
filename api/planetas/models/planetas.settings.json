@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "planetas",
+  "info": {
+    "name": "Planetas"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "descripcion": {
+      "type": "text"
+    },
+    "avatar": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "historias": {
+      "via": "planeta",
+      "collection": "historias"
+    },
+    "personajes": {
+      "collection": "personajes",
+      "via": "planeta"
+    },
+    "objetos": {
+      "collection": "objetos",
+      "via": "planeta"
+    }
+  }
+}

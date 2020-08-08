@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "objetos",
+  "info": {
+    "name": "Objetos"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "planeta": {
+      "via": "objetos",
+      "model": "planetas"
+    }
+  }
+}

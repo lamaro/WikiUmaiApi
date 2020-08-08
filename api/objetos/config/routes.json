@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/objetos",
+      "handler": "objetos.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/objetos/count",
+      "handler": "objetos.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/objetos/:id",
+      "handler": "objetos.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/objetos",
+      "handler": "objetos.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/objetos/:id",
+      "handler": "objetos.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/objetos/:id",
+      "handler": "objetos.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
