@@ -13,19 +13,19 @@
       "type": "string"
     },
     "personajes": {
-      "collection": "personajes",
       "via": "historias",
+      "collection": "personajes",
       "dominant": true
-    },
-    "planeta": {
-      "model": "planetas",
-      "via": "historias"
     },
     "sinopsis": {
       "type": "richtext"
     },
     "slug": {
       "type": "string"
+    },
+    "planeta": {
+      "via": "historias",
+      "model": "planetas"
     }
   }
 }

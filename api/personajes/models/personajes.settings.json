@@ -17,8 +17,8 @@
       "via": "personajes"
     },
     "historias": {
-      "via": "personajes",
-      "collection": "historias"
+      "collection": "historias",
+      "via": "personajes"
     },
     "avatares": {
       "collection": "file",
@@ -33,6 +33,32 @@
     },
     "slug": {
       "type": "string"
+    },
+    "sinopsis": {
+      "type": "richtext"
+    },
+    "introduccion": {
+      "type": "text"
+    },
+    "raza": {
+      "type": "string"
+    },
+    "genero": {
+      "type": "string"
+    },
+    "edad": {
+      "type": "string"
+    },
+    "altura": {
+      "type": "string"
+    },
+    "profesion": {
+      "type": "string"
+    },
+    "objetos": {
+      "collection": "objetos",
+      "via": "personajes",
+      "dominant": true
     }
   }
 }
