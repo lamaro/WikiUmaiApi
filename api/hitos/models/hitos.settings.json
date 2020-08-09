@@ -13,8 +13,11 @@
       "type": "string"
     },
     "planeta": {
-      "via": "hitos",
-      "model": "planetas"
+      "model": "planetas",
+      "via": "hitos"
+    },
+    "slug": {
+      "type": "string"
     }
   }
 }

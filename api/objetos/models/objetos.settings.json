@@ -13,8 +13,11 @@
       "type": "string"
     },
     "planeta": {
-      "via": "objetos",
-      "model": "planetas"
+      "model": "planetas",
+      "via": "objetos"
+    },
+    "slug": {
+      "type": "string"
     }
   }
 }

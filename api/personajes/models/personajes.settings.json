@@ -17,8 +17,8 @@
       "via": "personajes"
     },
     "historias": {
-      "collection": "historias",
-      "via": "personajes"
+      "via": "personajes",
+      "collection": "historias"
     },
     "avatares": {
       "collection": "file",
@@ -30,6 +30,9 @@
       ],
       "plugin": "upload",
       "required": false
+    },
+    "slug": {
+      "type": "string"
     }
   }
 }
