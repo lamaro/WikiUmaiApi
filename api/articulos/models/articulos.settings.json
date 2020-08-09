@@ -1,19 +1,19 @@
 {
   "kind": "collectionType",
-  "collectionName": "hitos",
+  "collectionName": "articulos",
   "info": {
-    "name": "Hitos"
+    "name": "Articulos"
   },
   "options": {
     "increments": true,
     "timestamps": true
   },
   "attributes": {
-    "nombre": {
+    "Titulo": {
       "type": "string"
     },
     "planeta": {
-      "via": "hitos",
+      "via": "articulos",
       "model": "planetas"
     }
   }

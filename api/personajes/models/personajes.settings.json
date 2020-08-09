@@ -13,12 +13,23 @@
       "type": "string"
     },
     "planeta": {
-      "via": "personajes",
-      "model": "planetas"
+      "model": "planetas",
+      "via": "personajes"
     },
     "historias": {
-      "via": "personajes",
-      "collection": "historias"
+      "collection": "historias",
+      "via": "personajes"
+    },
+    "avatares": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
     }
   }
 }

@@ -13,13 +13,13 @@
       "type": "string"
     },
     "personajes": {
-      "collection": "personajes",
       "via": "historias",
+      "collection": "personajes",
       "dominant": true
     },
     "planeta": {
-      "model": "planetas",
-      "via": "historias"
+      "via": "historias",
+      "model": "planetas"
     },
     "sinopsis": {
       "type": "richtext"

@@ -30,15 +30,23 @@
       "required": false
     },
     "historias": {
-      "via": "planeta",
-      "collection": "historias"
+      "collection": "historias",
+      "via": "planeta"
     },
     "personajes": {
-      "collection": "personajes",
-      "via": "planeta"
+      "via": "planeta",
+      "collection": "personajes"
     },
     "objetos": {
       "collection": "objetos",
+      "via": "planeta"
+    },
+    "hitos": {
+      "collection": "hitos",
+      "via": "planeta"
+    },
+    "articulos": {
+      "collection": "articulos",
       "via": "planeta"
     }
   }
