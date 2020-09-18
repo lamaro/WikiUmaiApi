@@ -2,7 +2,6 @@ module.exports = {
     apps: [
       {
         name: 'strapi',
-        cwd: '/var/www/wwwroot/nodejs.revisionalpha.com',
         script: './server.js',
         env: {
           NODE_ENV: 'production',
