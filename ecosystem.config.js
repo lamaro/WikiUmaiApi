@@ -2,7 +2,8 @@ module.exports = {
     apps: [
       {
         name: 'strapi',
-        script: './server.js',
+        script: 'npm',
+        args: 'start',
         env: {
           NODE_ENV: 'production',
           DATABASE_HOST: 'localhost', // database endpoint
