@@ -2,6 +2,7 @@ module.exports = {
     apps: [
       {
         name: 'strapi',
+        cwd: '/home/revision/WikiUmaiApi/',
         script: 'npm',
         args: 'start',
         env: {
