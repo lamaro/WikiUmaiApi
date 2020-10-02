@@ -17,16 +17,14 @@
       "via": "personajes"
     },
     "historias": {
-      "collection": "historias",
-      "via": "personajes"
+      "via": "personajes",
+      "collection": "historias"
     },
-    "avatares": {
+    "galeria": {
       "collection": "file",
       "via": "related",
       "allowedTypes": [
-        "images",
-        "files",
-        "videos"
+        "images"
       ],
       "plugin": "upload",
       "required": false
@@ -40,23 +38,32 @@
     "introduccion": {
       "type": "text"
     },
-    "raza": {
-      "type": "string"
-    },
-    "genero": {
-      "type": "string"
-    },
-    "edad": {
-      "type": "string"
-    },
-    "altura": {
-      "type": "string"
-    },
-    "profesion": {
-      "type": "string"
-    },
     "objetos": {
+      "via": "personajes",
       "collection": "objetos",
+      "dominant": true
+    },
+    "habilidades": {
+      "type": "component",
+      "repeatable": false,
+      "component": "habilidades.habilidades-personaje"
+    },
+    "caracteristicas": {
+      "type": "component",
+      "repeatable": false,
+      "component": "caracteristicas.caracteristicas"
+    },
+    "avatar": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "hitos": {
+      "collection": "hitos",
       "via": "personajes",
       "dominant": true
     }

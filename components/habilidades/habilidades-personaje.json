@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_habilidades_habilidades_personajes",
+  "info": {
+    "name": "habilidades_personaje",
+    "icon": "angry"
+  },
+  "options": {},
+  "attributes": {
+    "fuerza": {
+      "type": "integer"
+    },
+    "inteligencia": {
+      "type": "integer"
+    },
+    "habilidad": {
+      "type": "integer"
+    },
+    "suerte": {
+      "type": "integer"
+    }
+  }
+}

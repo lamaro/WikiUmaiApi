@@ -18,6 +18,18 @@
     },
     "slug": {
       "type": "string"
+    },
+    "personajes": {
+      "via": "hitos",
+      "collection": "personajes"
+    },
+    "historias": {
+      "via": "hitos",
+      "collection": "historias"
+    },
+    "objetos": {
+      "via": "hitos",
+      "collection": "objetos"
     }
   }
 }

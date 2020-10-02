@@ -13,8 +13,8 @@
       "type": "string"
     },
     "personajes": {
-      "via": "historias",
       "collection": "personajes",
+      "via": "historias",
       "dominant": true
     },
     "sinopsis": {
@@ -24,8 +24,16 @@
       "type": "string"
     },
     "planeta": {
+      "model": "planetas",
+      "via": "historias"
+    },
+    "contenido": {
+      "type": "richtext"
+    },
+    "hitos": {
+      "collection": "hitos",
       "via": "historias",
-      "model": "planetas"
+      "dominant": true
     }
   }
 }

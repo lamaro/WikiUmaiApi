@@ -547,7 +547,7 @@
                     "type": "string"
                   }
                 },
-                "avatares": {
+                "galeria": {
                   "type": "array",
                   "items": {
                     "type": "string"
@@ -562,22 +562,22 @@
                 "introduccion": {
                   "type": "string"
                 },
-                "raza": {
-                  "type": "string"
-                },
-                "genero": {
-                  "type": "string"
-                },
-                "edad": {
-                  "type": "string"
-                },
-                "altura": {
-                  "type": "string"
-                },
-                "profesion": {
-                  "type": "string"
-                },
                 "objetos": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "habilidades": {
+                  "type": "component"
+                },
+                "caracteristicas": {
+                  "type": "component"
+                },
+                "avatar": {
+                  "type": "string"
+                },
+                "hitos": {
                   "type": "array",
                   "items": {
                     "type": "string"
@@ -635,11 +635,48 @@
                 "items": {
                   "type": "string"
                 }
-              },
-              "articulos": {
-                "type": "array",
-                "items": {
+              }
+            }
+          },
+          "contenido": {
+            "type": "string"
+          },
+          "hitos": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
                   "type": "string"
+                },
+                "nombre": {
+                  "type": "string"
+                },
+                "planeta": {
+                  "type": "string"
+                },
+                "slug": {
+                  "type": "string"
+                },
+                "personajes": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "historias": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "objetos": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 }
               }
             }
@@ -665,6 +702,15 @@
           },
           "planeta": {
             "type": "string"
+          },
+          "contenido": {
+            "type": "string"
+          },
+          "hitos": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           }
         }
       }

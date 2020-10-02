@@ -13,15 +13,40 @@
       "type": "string"
     },
     "planeta": {
-      "via": "objetos",
-      "model": "planetas"
+      "model": "planetas",
+      "via": "objetos"
     },
     "slug": {
       "type": "string"
     },
     "personajes": {
+      "collection": "personajes",
+      "via": "objetos"
+    },
+    "tipo": {
+      "type": "enumeration",
+      "enum": [
+        "profesion",
+        "inventario"
+      ],
+      "unique": false
+    },
+    "hitos": {
+      "collection": "hitos",
       "via": "objetos",
-      "collection": "personajes"
+      "dominant": true
+    },
+    "origen": {
+      "type": "richtext"
+    },
+    "contexto_uso": {
+      "type": "richtext"
+    },
+    "modo_uso": {
+      "type": "richtext"
+    },
+    "impacto_social": {
+      "type": "richtext"
     }
   }
 }

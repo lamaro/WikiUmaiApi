@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_caracteristicas_caracteristicas",
+  "info": {
+    "name": "Caracteristicas",
+    "icon": "allergies"
+  },
+  "options": {},
+  "attributes": {
+    "raza": {
+      "type": "string"
+    },
+    "genero": {
+      "type": "string"
+    },
+    "edad": {
+      "type": "string"
+    },
+    "altura": {
+      "type": "string"
+    },
+    "profesion": {
+      "type": "string"
+    }
+  }
+}

@@ -568,12 +568,6 @@
                 "items": {
                   "type": "string"
                 }
-              },
-              "articulos": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
               }
             }
           },
@@ -602,7 +596,7 @@
                     "type": "string"
                   }
                 },
-                "avatares": {
+                "galeria": {
                   "type": "array",
                   "items": {
                     "type": "string"
@@ -617,20 +611,67 @@
                 "introduccion": {
                   "type": "string"
                 },
-                "raza": {
+                "objetos": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "habilidades": {
+                  "type": "component"
+                },
+                "caracteristicas": {
+                  "type": "component"
+                },
+                "avatar": {
                   "type": "string"
                 },
-                "genero": {
+                "hitos": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          },
+          "tipo": {
+            "type": "string",
+            "enum": [
+              "profesion",
+              "inventario"
+            ]
+          },
+          "hitos": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
                   "type": "string"
                 },
-                "edad": {
+                "nombre": {
                   "type": "string"
                 },
-                "altura": {
+                "planeta": {
                   "type": "string"
                 },
-                "profesion": {
+                "slug": {
                   "type": "string"
+                },
+                "personajes": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "historias": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 },
                 "objetos": {
                   "type": "array",
@@ -640,6 +681,18 @@
                 }
               }
             }
+          },
+          "origen": {
+            "type": "string"
+          },
+          "contexto_uso": {
+            "type": "string"
+          },
+          "modo_uso": {
+            "type": "string"
+          },
+          "impacto_social": {
+            "type": "string"
           }
         }
       },
@@ -659,6 +712,31 @@
             "items": {
               "type": "string"
             }
+          },
+          "tipo": {
+            "type": "string",
+            "enum": [
+              "profesion",
+              "inventario"
+            ]
+          },
+          "hitos": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "origen": {
+            "type": "string"
+          },
+          "contexto_uso": {
+            "type": "string"
+          },
+          "modo_uso": {
+            "type": "string"
+          },
+          "impacto_social": {
+            "type": "string"
           }
         }
       }
