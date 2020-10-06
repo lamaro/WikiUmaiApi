@@ -1,0 +1,9 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/ultimas_entradas",
+      "handler": "LastEntries.index"
+    }
+  ]
+}
