@@ -879,6 +879,9 @@
                   "items": {
                     "type": "string"
                   }
+                },
+                "anio": {
+                  "type": "string"
                 }
               }
             }

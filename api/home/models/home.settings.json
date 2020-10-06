@@ -1,0 +1,28 @@
+{
+  "kind": "singleType",
+  "collectionName": "homes",
+  "info": {
+    "name": "Home"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "titulo_bienvenida": {
+      "type": "string"
+    },
+    "bajada_bienvenida": {
+      "type": "text"
+    },
+    "titulo_universo": {
+      "type": "string"
+    },
+    "bajada_universo": {
+      "type": "text"
+    },
+    "show_latest": {
+      "type": "boolean"
+    }
+  }
+}

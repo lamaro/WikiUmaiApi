@@ -1,0 +1,19 @@
+{
+  "kind": "singleType",
+  "collectionName": "ayudas",
+  "info": {
+    "name": "Ayuda"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "titulo": {
+      "type": "string"
+    },
+    "contenido": {
+      "type": "richtext"
+    }
+  }
+}

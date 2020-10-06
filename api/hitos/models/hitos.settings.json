@@ -13,23 +13,26 @@
       "type": "string"
     },
     "planeta": {
-      "via": "hitos",
-      "model": "planetas"
+      "model": "planetas",
+      "via": "hitos"
     },
     "slug": {
       "type": "string"
     },
     "personajes": {
-      "via": "hitos",
-      "collection": "personajes"
+      "collection": "personajes",
+      "via": "hitos"
     },
     "historias": {
-      "via": "hitos",
-      "collection": "historias"
+      "collection": "historias",
+      "via": "hitos"
     },
     "objetos": {
-      "via": "hitos",
-      "collection": "objetos"
+      "collection": "objetos",
+      "via": "hitos"
+    },
+    "anio": {
+      "type": "string"
     }
   }
 }

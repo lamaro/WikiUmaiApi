@@ -723,6 +723,9 @@
                 }
               }
             }
+          },
+          "anio": {
+            "type": "string"
           }
         }
       },
@@ -754,6 +757,9 @@
             "items": {
               "type": "string"
             }
+          },
+          "anio": {
+            "type": "string"
           }
         }
       }

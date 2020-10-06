@@ -21,14 +21,17 @@ module.exports = {
   async me(ctx) {
     const user = ctx.state.user;
 
+    const completeUser = await strapi
+      .query("user", "users-permissions")
+      .findOne({ id: user.id });
+
     if (!user) {
-      return ctx.badRequest(null, [{ messages: [{ id: 'No authorization header was found' }] }]);
+      return ctx.badRequest(null, [
+        { messages: [{ id: "No authorization header was found" }] },
+      ]);
     }
 
-    //const avatar = 'test avatar'
-    const userWithAvatar = {...user}
-
-    const data = sanitizeUser(userWithAvatar);
+    const data = sanitizeUser(completeUser);
     ctx.send(data);
   }
 };

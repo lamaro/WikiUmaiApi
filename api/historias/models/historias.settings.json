@@ -31,8 +31,8 @@
       "type": "richtext"
     },
     "hitos": {
-      "collection": "hitos",
       "via": "historias",
+      "collection": "hitos",
       "dominant": true
     }
   }

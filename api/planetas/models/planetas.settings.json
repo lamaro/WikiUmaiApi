@@ -42,8 +42,8 @@
       "collection": "objetos"
     },
     "hitos": {
-      "collection": "hitos",
-      "via": "planeta"
+      "via": "planeta",
+      "collection": "hitos"
     }
   }
 }

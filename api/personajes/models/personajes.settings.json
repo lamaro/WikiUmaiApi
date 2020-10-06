@@ -63,8 +63,8 @@
       "required": false
     },
     "hitos": {
-      "collection": "hitos",
       "via": "personajes",
+      "collection": "hitos",
       "dominant": true
     }
   }

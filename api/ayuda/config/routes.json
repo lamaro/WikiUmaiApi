@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/ayuda",
+      "handler": "ayuda.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/ayuda",
+      "handler": "ayuda.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/ayuda",
+      "handler": "ayuda.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

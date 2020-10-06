@@ -32,8 +32,8 @@
       "unique": false
     },
     "hitos": {
-      "collection": "hitos",
       "via": "objetos",
+      "collection": "hitos",
       "dominant": true
     },
     "origen": {
