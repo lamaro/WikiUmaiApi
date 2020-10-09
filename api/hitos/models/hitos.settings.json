@@ -28,8 +28,8 @@
       "via": "hitos"
     },
     "objetos": {
-      "collection": "objetos",
-      "via": "hitos"
+      "via": "hitos",
+      "collection": "objetos"
     },
     "anio": {
       "type": "string"

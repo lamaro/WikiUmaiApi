@@ -37,13 +37,13 @@
       "via": "planeta",
       "collection": "personajes"
     },
-    "objetos": {
-      "via": "planeta",
-      "collection": "objetos"
-    },
     "hitos": {
       "via": "planeta",
       "collection": "hitos"
+    },
+    "objetos": {
+      "via": "planetas",
+      "collection": "objetos"
     }
   }
 }

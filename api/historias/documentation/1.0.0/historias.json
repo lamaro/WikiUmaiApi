@@ -624,13 +624,13 @@
                   "type": "string"
                 }
               },
-              "objetos": {
+              "hitos": {
                 "type": "array",
                 "items": {
                   "type": "string"
                 }
               },
-              "hitos": {
+              "objetos": {
                 "type": "array",
                 "items": {
                   "type": "string"
@@ -683,6 +683,67 @@
                 }
               }
             }
+          },
+          "objetos": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "nombre": {
+                  "type": "string"
+                },
+                "planetas": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "slug": {
+                  "type": "string"
+                },
+                "personajes": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "tipo": {
+                  "type": "string"
+                },
+                "hitos": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "origen": {
+                  "type": "string"
+                },
+                "contexto_uso": {
+                  "type": "string"
+                },
+                "modo_uso": {
+                  "type": "string"
+                },
+                "impacto_social": {
+                  "type": "string"
+                },
+                "descripcion": {
+                  "type": "string"
+                },
+                "historias": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
           }
         }
       },
@@ -710,6 +771,12 @@
             "type": "string"
           },
           "hitos": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "objetos": {
             "type": "array",
             "items": {
               "type": "string"

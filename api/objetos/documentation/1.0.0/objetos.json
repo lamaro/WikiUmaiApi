@@ -525,48 +525,51 @@
           "nombre": {
             "type": "string"
           },
-          "planeta": {
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "nombre": {
-                "type": "string"
-              },
-              "slug": {
-                "type": "string"
-              },
-              "descripcion": {
-                "type": "string"
-              },
-              "avatar": {
-                "type": "string"
-              },
-              "historias": {
-                "type": "array",
-                "items": {
+          "planetas": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
                   "type": "string"
-                }
-              },
-              "personajes": {
-                "type": "array",
-                "items": {
+                },
+                "nombre": {
                   "type": "string"
-                }
-              },
-              "objetos": {
-                "type": "array",
-                "items": {
+                },
+                "slug": {
                   "type": "string"
-                }
-              },
-              "hitos": {
-                "type": "array",
-                "items": {
+                },
+                "descripcion": {
                   "type": "string"
+                },
+                "avatar": {
+                  "type": "string"
+                },
+                "historias": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "personajes": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "hitos": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "objetos": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 }
               }
             }
@@ -696,6 +699,55 @@
           },
           "impacto_social": {
             "type": "string"
+          },
+          "descripcion": {
+            "type": "string"
+          },
+          "historias": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "titulo": {
+                  "type": "string"
+                },
+                "personajes": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "sinopsis": {
+                  "type": "string"
+                },
+                "slug": {
+                  "type": "string"
+                },
+                "planeta": {
+                  "type": "string"
+                },
+                "contenido": {
+                  "type": "string"
+                },
+                "hitos": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "objetos": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
           }
         }
       },
@@ -704,8 +756,11 @@
           "nombre": {
             "type": "string"
           },
-          "planeta": {
-            "type": "string"
+          "planetas": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "slug": {
             "type": "string"
@@ -740,6 +795,15 @@
           },
           "impacto_social": {
             "type": "string"
+          },
+          "descripcion": {
+            "type": "string"
+          },
+          "historias": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           }
         }
       }

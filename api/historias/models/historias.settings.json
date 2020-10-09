@@ -34,6 +34,10 @@
       "via": "historias",
       "collection": "hitos",
       "dominant": true
+    },
+    "objetos": {
+      "via": "historias",
+      "collection": "objetos"
     }
   }
 }

@@ -557,13 +557,13 @@
                   "type": "string"
                 }
               },
-              "objetos": {
+              "hitos": {
                 "type": "array",
                 "items": {
                   "type": "string"
                 }
               },
-              "hitos": {
+              "objetos": {
                 "type": "array",
                 "items": {
                   "type": "string"
@@ -671,6 +671,12 @@
                   "items": {
                     "type": "string"
                   }
+                },
+                "objetos": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 }
               }
             }
@@ -688,8 +694,11 @@
                 "nombre": {
                   "type": "string"
                 },
-                "planeta": {
-                  "type": "string"
+                "planetas": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 },
                 "slug": {
                   "type": "string"
@@ -720,6 +729,15 @@
                 },
                 "impacto_social": {
                   "type": "string"
+                },
+                "descripcion": {
+                  "type": "string"
+                },
+                "historias": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 }
               }
             }
