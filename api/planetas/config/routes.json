@@ -3,7 +3,7 @@
     {
       "method": "GET",
       "path": "/planetas",
-      "handler": "planetas.find",
+      "handler": "planetas.index",
       "config": {
         "policies": []
       }
@@ -20,6 +20,14 @@
       "method": "GET",
       "path": "/planetas/:id",
       "handler": "planetas.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/planetas/slug/:slug",
+      "handler": "planetas.planetaBySlug",
       "config": {
         "policies": []
       }
