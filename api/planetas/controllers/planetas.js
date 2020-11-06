@@ -4,7 +4,7 @@ module.exports = {
         const planetas = await strapi
             .query("planetas")
             .find({ _sort: "updated_at:desc" });
-        const finalArray = planetas.map((planeta) => _.omit(planeta, ['historias', 'personajes', 'hitos', 'objetos']))
+        const finalArray = planetas.map((planeta) => _.omit(planeta, ['descripcion','historias', 'personajes', 'hitos', 'objetos']))
         return finalArray
     },
     async planetaBySlug(ctx) {
